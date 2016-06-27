@@ -1,0 +1,87 @@
+Git help config       	#brings up the help page for the git config command
+
+git log			#history of commits
+
+
+git add <list of files>	#adds files to be tracked by git
+
+git add --all		#adds all files
+
+git add *.txt		#adds all txt files in the current directory
+
+git add docs/*.txt	#adds all text files in the "docs" directory
+
+git add docs/		#adds all files in the "docs" directory
+
+git rm --cached <filename>	#untracks file but leaves it in the repo
+
+git diff		#shows unstaged differences since last commit
+
+git diff --staged	#shows staged differences since last commit
+
+git reset HEAD <file name>	#removes specified file from the head
+
+git commit -a -m "message"	#adds and commits all changes for tracked files
+
+git reset --soft HEAD^		#removes changes applied in previous change and restores them to staging
+
+git commit --amend -m "message"	#amends previous commit with new file and message
+
+git reset --hard HEAD^		#removes changes applied in previous change and erases the change
+
+
+
+git remote add origin <address>	#connects git to a remote repository
+
+git remote rm origin		#removes remote connection
+
+git remote -v			#displays all remote repositories linked to Git
+
+git push -u origin master	#remote after u displays local repo name and remote branch name
+
+git pull			#pulls down any changes and sycs local repository
+
+git fetch			#pulls down updates from hub, but doesn't merge
+
+
+git clone <url>	<local copy name>	#creates local copy of a repository 
+
+git branch <branch name>	#creates new branch
+
+git checkout <branch name>	#moves work onto the new branch
+
+ls				#lists files on the branch
+
+git merge <branch name>		#merges a second branch into the one you are currently on
+
+git branch -d <branch name>	#deletes a branch
+
+git checkout -b <branch name>	#creates a new branch and checks it out in 1 step
+
+git branch			#shows list of branches in the repo and which one you are on
+
+VI commands:	j = down; k = up; ESC = leave mode; :wq = write/save and quit; h = left; l = right; i = insert mode; :q! cancel and quit
+
+git push origin <branch name>	#links local branch to remote branch
+
+git branch -r			#lists all remote branches
+
+git remote show origin		#shows all remote and local branches
+
+git push origin :<branch name>	#deletes remote branch
+
+git branch -D <branch name>	#foreces local branch delete
+
+git remote prune origin		#cleans up remote branches that were deleted on local system
+
+git tag				#shows tags on commits
+
+git checkout <tag name>		#checks out commit based on tag name
+
+git tag -a <tag name> -m "message"	#creates a new tag
+
+git push --tags			#pushes new tags to remote repo
+
+git rebase			#moves changes to master not in origin/master to temp area, runs origin/master commits, runs all commits in temp area one at a time
+
+git checkout -- "filename" 	#removes changes to local repo copy of a file
