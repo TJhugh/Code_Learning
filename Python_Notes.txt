@@ -1,0 +1,65 @@
+Python Notes:
+
+Basic structure is read, evaluate, print loop or REPL
+
+Leading white space is required in python.  Indent by 4 spaces for each level.  Colon is the sign that following line(s) must be indented
+
+
+The zen of python:  call using "import this"
+
+call modules using the import command
+
+/ is float division (decimals)
+// is integer division (whole numbers only)
+
+** is exponent
+
+int = whole number integer.  int() converts other types to int
+float = decimal numbers.  Includes decimals or numbers using e.  float() converts other types to float
+None = value indicating there is no value.  Stored as a blank value
+bool = boolean type.  Values are True and False.  bool(0) = false bool(any other numerical value) = True
+
+
+= is used to assign something to a variable
+
+==  equal to
+!=  not equal to
+<   less than
+>   greater than
+<=  less than or equal to
+>=  greater than or equal to
+
+
+if, elif (else if), else
+
+
+while loop:  while x is true do something.  otherwise, stop
+
+ctrl + c terminates infinite loops in python
+
+
+input() = ask for user input in console
+
+
+str = string type.  sequence of text.  Once a string is created, it can't be changed.  You can use both "" or ''
+      You can automatically concatenate by putting strings next to each other in quotes.  \n = new line
+      r in front of a string creates a raw string not using escape characters
+
+bytes = sequences of bytes.  Used for raw binary data.  prefix is b
+
+list = sequence of objects.  Can change objects within a list.  [1, 2, 3] is a list of 1 2 and 3.  Can contain multiple
+       types (int, str, bool, etc).  use [] to create a blank list
+
+dictionaries = key:value pair.  Used in {}  {k1: v1, k2: v2}
+
+def func_name(x):
+    return x * x
+
+Local Scope = variables defined inside the current function
+Enclosing Scope = variables defined inside and and all enclosing functions
+Global Scope = variables defined at the top level of the module
+Built-in Scope = variables defined by the builtins module of python
+
+Scope is checked from narrowes (Local) to widest (Built-in)
+
+tuple = similar to lists.  Set up in parentheses.  Items separated by commas.  Can access elements with 0 based index.      Immutable.
